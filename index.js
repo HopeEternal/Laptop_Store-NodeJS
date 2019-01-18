@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
         });
     }
     //LAPTOP DEETS    
-    else if (pathName === '/laptop' && id < laptopData.length) {
+     else if (pathName === '/laptop' && id < laptopData.length) {
         res.writeHead(200, {'Content-type': 'text-html'});
 
         fs.readFile(`${__dirname}/templates/template-laptop.html`, 'utf-8', (err, data) => {
